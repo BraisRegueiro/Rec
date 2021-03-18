@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/frg_titutlo_register"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@drawable/supbar"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/frg_tit_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:text="@string/frg_titulo_login"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="377dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/frg_titutlo_register"
+        app:layout_constraintTop_toBottomOf="@+id/frg_titutlo_register">
+
+        <EditText
+            android:id="@+id/frg_login_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/txtemail" />
+
+        <EditText
+            android:id="@+id/frg_login_txt_passsword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:text="@string/frg_login_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="368dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <CheckBox
+            android:id="@+id/frg_login_chekbox_recuerdame"
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/RecuerdaContraseña" />
+
+        <Button
+            android:id="@+id/frg_login_btn_olvido"
+            style="@style/BtnLink"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btnOlvidarContraseña" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frg_titutlo_register"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/frg_login_btn_entrar"
+            style="@style/BtnSecondary"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:color="@color/white"
+            android:text="@string/BtnEntrar" />
+
+        <Button
+            android:id="@+id/frg_login_btn_registro"
+            style="@style/BtnLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/BtnRegistro" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

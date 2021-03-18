@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/frg_titutlo_register"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@drawable/supbar"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/frg_tit_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:text="@string/frg_titulo_register"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/frg_titutlo_register"
+        app:layout_constraintStart_toStartOf="@+id/frg_titutlo_register"
+        app:layout_constraintTop_toBottomOf="@+id/frg_titutlo_register" />
+</androidx.constraintlayout.widget.ConstraintLayout>
