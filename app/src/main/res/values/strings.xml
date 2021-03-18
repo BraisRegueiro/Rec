@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Rec</string>
+    <string name="frg_tit_login" />
+    <string name="frg_titulo_login">Login</string>
+    <string name="txtEmail">email</string>
+    <string name="txtemail">Email</string>
+    <string name="frg_login_password">Contraseña</string>
+    <string name="RecuerdaContraseña">Recordar Contraseña</string>
+    <string name="BtnEntrar">Entrar</string>
+    <string name="BtnRegistro">Registrate</string>
+    <string name="btnOlvidarContraseña">Olvidé mi contraseña</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="act_inicial_txt_bienvenida">bienvenido</string>
+    <string name="frg_titulo_register">Registro</string>
+    <string name="datos_incorrectos">Los datos son incorrectos</string>
+    <string name="contraseña_corta">la contraseña es incorrecta</string>
+    <string name="sharedpreferences_file">fichero configuración</string>
 </resources>
